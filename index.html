@@ -2,9 +2,10 @@
 <html>
   <body>
     <!--Chat box will appear here-->
-<div id="MyLiveChatContainer"></div>
-
-<!--Add the following script at the bottom of the web page (before </body></html>)-->
-<script type="text/javascript" defer="defer" src="https://www.mylivechat.com/chatapi.aspx?hccid=47638185"></script>
+<script type="text/javascript">function add_chatbox(){
+var nt=document.createElement("script");
+nt.async=true;nt.src="https://mylivechat.com/chatbox.aspx?hccid=47638185";var ct=document.getElementsByTagName("script")[0];
+ct.parentNode.insertBefore(nt,ct);}
+add_chatbox();</script>
    </body>
 </html>
