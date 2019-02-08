@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <body>
-<!--Chat Box will appear here-->
+    <script type="text/javascript">
+function MyLiveChat_OnInit() {
+  MyLiveChat_SetUserName("test user","userid-1234");
+  MyLiveChat_SetEmail("test@yoursite.com");
+  MyLiveChat_SetDepartment("Default");
+  MyLiveChat_SetQuestion("test question");
+  MyLiveChat_SetContextData("This is VIP");
+  MyLiveChat_SetProductName("Sample Product");
+  MyLiveChat_SetProductKey("Sample_7065");
+}
+</script>
 <div id="MyLiveChatContainer"></div>
-
 <!--Add the following script at the bottom of the web page (before </body></html>)-->
-<script type="text/javascript">function add_chatbox(){var hccid=47638185;var nt=document.createElement("script");nt.async=true;nt.src="https://www.mylivechat.com/chatbox.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
-add_chatbox();</script>
+<script type="text/javascript">function add_chatinline(){var hccid=47638185;var nt=document.createElement("script");nt.async=true;nt.src="https://www.mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+add_chatinline();</script>
    </body>
 </html>
